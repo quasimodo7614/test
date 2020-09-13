@@ -1,5 +1,4 @@
-FROM cargo.caicloud.xyz/library/docker:18.03.1-ce-dind-make
-
+FROM test.cargo.io/library/alpine:3.7
 COPY bin/test /usr/local/test
 
 ENTRYPOINT ["test"]
